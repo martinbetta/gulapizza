@@ -1,5 +1,13 @@
 <div class="colorwhite">
 <div class="container">
+  <div class="menu_home_list">
+     <div><%= link_to "NUESTRAS PIZZAS", pizzas_path, class: "btn-dark menu_home"%></div>
+     <div><%= link_to "NUESTROS SERVICIOS", about_path, class: "btn-dark menu_home"%></div>
+     <div><%= link_to "PREGUNTAS FRECUENTES", question_path, class: "btn-dark menu_home"%></div>
+    </div>
+    <div>
+     <p>   <%= link_to "HAZ TU PEDIDO", pizzas_path, class: "btn button_pedido"%></p>
+    </div>
 
 
 <!--       <%= cl_image_tag("gulabanner_dsjmml",
