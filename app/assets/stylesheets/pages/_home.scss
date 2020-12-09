@@ -1,1 +1,80 @@
 // Specific CSS for your home-page
+.home_icons {
+  font-size: 4vw;
+  text-align: center;
+  margin-top: 2vh;
+  .fa-instagram{
+    color:  #FF00FF;
+  }
+  .fa-whatsapp{
+    color: #25d366;
+  }
+}
+
+.menu_home_list{
+  display:flex;
+  justify-content:space-around;
+}
+
+.menu_home{
+  // background-color: black;
+  // color:white;
+  width: 33%;
+  padding: 1vw 1vw;
+  font-size: 2vw;
+
+  // margin-bottom: 3vw;
+}
+.banner_home{
+  margin-top: 50px;
+  // background-image: url('banner.png');
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  height: 550px;
+  margin-bottom: 50px;
+}
+
+.button_pedido{
+  display: flex;
+  justify-content:center;
+  background-color: #ebc600;
+  padding-top: 2vw;
+  margin-bottom: 2vw;
+  font-size: 2vw;
+  border-color: black;
+  border:solid;
+  font-weight: bold;
+  margin-top: 4vh;
+}
+
+.slogan{
+  font-size: 3vw;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1vw;
+   margin-top: 2vw;
+}
+
+.zonas{
+  background-color: #23272B;
+  color:white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2vw;
+  padding-top:1vw;
+  padding-bottom:1vw;
+  margin-top: 2vw;
+}
+.envio{
+  margin-top: 1vh;
+  text-align: center;
+  font-size: 2vw;
+}
+.cld-responsive{
+    width: 100%;
+  height: auto;
+}
+
+
+
