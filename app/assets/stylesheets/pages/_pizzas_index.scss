@@ -1,0 +1,50 @@
+.colorwhite{
+  background-color: white;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+}
+.background_index{
+ // background-image: url("background_index.png");
+   // background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150px;
+}
+
+.image_footer{
+  display: flex;
+  justify-content:center;
+  // background-image: cloudinary-url("logo_gpvujf", $width: 50, $height: 50,$crop: "scale", $radius: 10);
+  // background-image: url("footer_image.png");
+  font-size: 1vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 1vw;
+  margin-bottom: 1vw;
+}
+
+.title_index{
+  background-color: #ffa500;
+  text-align: center;
+  font-size: 2vw;
+  font-weight: bold;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  margin-bottom: 1vw;
+}
+
+.subtitle-index{
+  font-weight: bold;
+  text-align: center;
+  font-size: 2vw;
+  word-wrap: break-word;
+   margin-bottom: 2vw;
+   margin-top: 2vw;
+
+}
+.pizza_index{
+  font-size: 2vw;
+}
+.fa-euro-sign{
+  font-size: 1vw;
+}
