@@ -1,0 +1,23 @@
+<div class="colorwhite">
+  <div class="container">
+    <h2 class= "title_index">NUESTRAS PIZZAS</h2>
+    <P class="subtitle-index">TODAS HECHAS EN CASA CON INGREDIENTES FRESCOS <br>Y MUCHO AMOR</P>
+
+    <div class="background_index pizza_index">
+      <% @pizzas.each do |pizza|%>
+      <ul>
+
+      <li><%=pizza.name.upcase%>: <%=pizza.price%> <i class="fas fa-euro-sign"></i> </li>
+      <%=pizza.ingredients%>.
+      </ul>
+      <%end%>
+    </div>
+    <p class="subtitle-index">PIZZAS  AL MOLDE DE MEDIA MASA <br> TE RECOMENDAMOS UN PIZZA PARA DOS PERSONAS</p>
+    <div class="image_footer">
+    <a href="/">
+    <%= cl_image_tag("logo_gpvujf",
+    width: 100, height:150, ) %>
+    </a>
+    </div>
+  </div>
+</div>
