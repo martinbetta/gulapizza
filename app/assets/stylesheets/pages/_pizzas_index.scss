@@ -48,3 +48,25 @@
 .fa-euro-sign{
   font-size: 1vw;
 }
+
+.no-bs-validation {
+  .is-valid, .is-invalid {
+    border-color: $gray-400;
+    background-image: inherit;
+    &:focus {
+      border-color: inherit;
+      box-shadow: 0 0 0 .2rem $gray-400;
+    }
+  }
+}
+.input-space {
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+.btns-input {
+  display: flex;
+  line-height: 50px;
+  width: 200px;
+}
+
