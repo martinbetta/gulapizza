@@ -5,19 +5,18 @@ class OrdersController < ApplicationController
   end
 
   def create
-    @order = Order.new(params_order)
-    @order.pizza_id = params[:pizza_id]
-    @order.customer_name = Customer.new(params_order)
-    unit_price = Pizza.find(params[:pizza_id]).unit_price
-    @order.price = unit_price
-    @order.save
-     redirect_to root_path
+  @order = Order.new(params_order)
+
+  if @order.save
+      redirect_to order_path(@order.id), notice: 'order was successfully created.'
+    else
+      render :new
+    end
   end
 
-def params_order
-    params.require(:order).permit(:customer_name, :last_name, :phone, :street )
+  def params_order
+      params.require(:order).permit(:t_quantity, :comment, :t_price, :delibery_date, :customer_name, :customer_lname, :customer_phone, :customer_mail, :customer_street, :customer_floor, :customer_zip)
   end
 
 end
-
 
