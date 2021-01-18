@@ -1,6 +1,24 @@
+<%= simple_form_for([ @order]) do |f| %>
 
-<%= form_for @order do |f|  %>
-  <%= f.label :customer_name, "nombre" %>
-  <%= f.text_field :customer_name %>
+      <%= f.association :pizza%> <%= f.input :t_quantity %>
+      <%= f.input :customer_name %>
+      <%= f.input :customer_lname %>
+      <%= f.input :customer_phone %>
+      <%= f.input :customer_mail %>
+      <%= f.input :customer_street %>
+      <%= f.input :customer_floor %>
+      <%= f.input :customer_zip %>
+      <%= f.input :comment %>
+      <%= f.input :delibery_date %>
+
+
+      <%= f.submit class: 'btn btn-primary' %>
   <% end %>
-<p>dasa</p>
+
+<!-- t.integer "t_quantity"
+    t.integer "t_price"
+
+
+    t.bigint "pizza_id", null: false
+    t.bigint "customer_id", null: false -->
+

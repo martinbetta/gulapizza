@@ -1,5 +1,3 @@
 class Pizza < ApplicationRecord
-  @pizza = Pizza.new
-  @order = Order.new
-
+  belongs_to :order
 end

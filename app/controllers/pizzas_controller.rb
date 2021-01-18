@@ -2,10 +2,23 @@ class PizzasController < ApplicationController
 
   def index
     @pizzas = Pizza.all
+    @order = Order.new
+
   end
 
   def new
-    @pizza = Pizza.new
   end
 
+  def create
+    @order = Order.new(params_order)
+     @order.save
+      redirect_to pizzas_path
+    end
+  private
+
+
+
+
 end
+
+

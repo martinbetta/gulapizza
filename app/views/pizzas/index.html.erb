@@ -5,19 +5,10 @@
 
     <div class="pizza_index">
       <%@pizzas.each do |pizza|%>
-        <%=pizza.name.upcase%>:
+        <ul><%=pizza.name.upcase%>:
         <%=pizza.price%> <i class="fas fa-euro-sign"></i>
         <%=pizza.ingredients%>.
-        <%= simple_form_for (pizza), html: {novalidate: true, class: "no-bs-validation"} do |f| %>
-        <div class="container-plus-and-minus">
-          <div class="btns-input">
-            <button onclick="if (this.parentNode.querySelector('input[type=number]').value > 0 ) this.parentNode.querySelector('input[type=number]').stepDown();  return false;" class="btn btn-lg minus"><i class="fas fa-minus-circle"></i></button>
-            <div class="input-space"><%= f.input :quantity, label: false, input_html: { value: 0 }%></div>
-             <button onclick="this.parentNode.querySelector('input[type=number]').stepUp();  return false;" class="btn btn-lg plus btn-plus"><i class="fas fa-plus-circle"></i></button>
-            </div>
-          </div>
-          <%= f.button :submit, 'Agregar', class:"add-to-cart btn-show-add"%>
-        <%end%>
+      </ul>
 
       <%end%>
       </div>
@@ -33,3 +24,4 @@
 
 
 </div>
+
