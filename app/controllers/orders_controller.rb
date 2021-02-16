@@ -8,9 +8,9 @@ class OrdersController < ApplicationController
   @order = Order.new(params_order)
 
   if @order.save
-      redirect_to order_path(@order.id), notice: 'order was successfully created.'
-    else
-      render :new
+      redirect_to home_path, notice: 'order was successfully created.'
+    # else
+    #   render :new
     end
   end
 
